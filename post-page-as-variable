@@ -1,0 +1,14 @@
+function callback($buffer) {
+  // modify buffer here, and then return the updated code return $buffer;
+}
+
+function buffer_start() {
+  ob_start("callback");
+}
+
+function buffer_end() {
+  ob_end_flush();
+}
+
+add_action('wp_head', 'buffer_start');
+add_action('wp_footer', 'buffer_end');
