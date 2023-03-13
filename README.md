@@ -1,2 +1,2 @@
-# wordPress-hooks
+# wordpress-hooks
 Custom WordPress hooks
